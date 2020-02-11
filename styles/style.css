@@ -37,6 +37,23 @@ z-index: 99;
   width: 95%;
   margin: 0 auto;
 }
+.btn__neon{
+  position: relative;
+  padding: 10px 30px;
+  margin: 0 15px;
+  transition: 0.5s;
+}
+.btn__neon:hover{
+  background: #4c4359;
+  color: #9085a4;
+  box-shadow: 0 0 60px #9085a4;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  /* transition-delay: 0.5s; */
+}
+/* =================== */
 .navigation{
   background: #4c4359;
   
@@ -69,7 +86,7 @@ nav.navigation__links{
   text-align: center;
   font-size: 15vh;
   font-weight: 900;
-  
+  letter-spacing: 5px;
 }
 .hero .hero__title span{
   font-weight: 800;
