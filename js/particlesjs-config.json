@@ -56,14 +56,14 @@
       "enable": true,
       "speed": 6,
       "direction": "bottom",
-      "random": false,
+      "random": true,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
       "attract": {
-        "enable": true,
-        "rotateX": 4971.630142283318,
-        "rotateY": 2525.2724532232724
+        "enable": false,
+        "rotateX": 200,
+        "rotateY": 200
       }
     }
   },
@@ -71,11 +71,11 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
-        "mode": "grab"
+        "enable": true,
+        "mode": "bubble"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "bubble"
       },
       "resize": true
@@ -88,9 +88,9 @@
         }
       },
       "bubble": {
-        "distance": 207.079689136843,
-        "size": 16.241544246026905,
-        "duration": 0.9744926547616141,
+        "distance": 200,
+        "size": 12,
+        "duration": 2,
         "opacity": 8,
         "speed": 3
       },
@@ -106,5 +106,5 @@
       }
     }
   },
-  "retina_detect": true
+  "retina_detect": false
 }
