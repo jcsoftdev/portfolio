@@ -85,7 +85,7 @@ z-index: 99; */
 .navigation a{
   color: #9085a4;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 900;
   text-decoration: none;
 }
@@ -117,8 +117,8 @@ nav.navigation__links{
   nav.navigation__links{
     display: flex;
     flex-direction: row;
-    width: 85%;
-    justify-content: space-between;
+    width: 80%;
+    justify-content: space-evenly;
     height: 116px;
     position: initial;
     background: #00000000;
@@ -128,7 +128,7 @@ nav.navigation__links{
     display: none;
   }
 }
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 960px){
   nav.navigation__links{
     width: 60%;
   }
