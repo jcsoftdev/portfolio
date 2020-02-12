@@ -117,7 +117,7 @@ nav.navigation__links{
   nav.navigation__links{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 85%;
     justify-content: space-between;
     height: 116px;
     position: initial;
@@ -128,7 +128,7 @@ nav.navigation__links{
     display: none;
   }
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1080px){
   nav.navigation__links{
     width: 60%;
   }
@@ -139,6 +139,7 @@ nav.navigation__links{
 }
 .dropdown svg{
   width: 3rem;
+  
 }
 .dropdown svg path{
   fill: #9085a4;
@@ -156,13 +157,6 @@ nav.navigation__links.show {
   justify-content: center;
   height: 100%;
 }
-.dropdown.show nav.navigation__links{
-  
-}
-.dropdown.show svg{
-  transition: transform 1s;
-  transform: rotateX(180deg);
-}
 /*============== estilos de hero ===============*/
 /* ========================================== */
 header .hero{
@@ -179,7 +173,6 @@ header .hero{
   display: flex;
   flex-direction: column;
   justify-content: space-normal;
-  
   align-items: center;
 }
 .hero .hero__title{
@@ -208,7 +201,7 @@ header .hero{
 .hero__info-container{
   display: flex;
   justify-content: center;
-  align-self: flex-end;
+  align-self: center;
   height: calc(100vh - 80vh);
 }
 .hero__about{
@@ -241,6 +234,14 @@ header .hero{
   font-size: 2rem;
   font-weight: bold;
 }
+@media screen and (min-width:480px){
+  .hero .container{
+    height: calc(100vh - 116px);
+  }
+  .hero__about{
+    /* width: 80%;               */
+  }
+}
 @media screen and (min-height: 700px){
   .hero__info-container{
     display: block;
@@ -263,9 +264,10 @@ header .hero{
   .hero .hero__title{
     font-size: 10vh;
   }
+  
   .hero__about{
     display: flex;
-    width: 100%;
+    width: 62.5%;
   }
   .hero__info-container{
     display: flex;
@@ -278,7 +280,11 @@ header .hero{
     font-size: 2.5rem;
   }
 }
-
+@media screen and (min-width: 1200px){
+  .hero__about{
+    width: 50%;
+  }
+}
 .hero{
     
 }

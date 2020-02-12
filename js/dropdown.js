@@ -5,6 +5,7 @@ const $navigation = document.querySelector('.navigation')
 $dropdown.addEventListener("click", e => {
   // $dropdown.setAttribute("data-drop", "1")
   const open = $dropdown.getAttribute("data-drop");
+  $dropdown.style.transition = "all .25s ease-in";
   if ((open)==="0") {
     $dropdown.style.transform = "rotate(180deg)"
     
@@ -12,7 +13,7 @@ $dropdown.addEventListener("click", e => {
     $navigation_links.classList.add("show");
     $dropdown.setAttribute("data-drop", "1");
   }else{
-    $dropdown.style.transform = "rotate(0deg)";
+    $dropdown.style.transform = "rotate(360deg)";
     $dropdown.setAttribute("data-drop", "0");
     $navigation_links.classList.remove("show")
     console.log(open);
