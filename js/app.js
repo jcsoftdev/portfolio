@@ -108,3 +108,4 @@ particlesJS({
   },
   retina_detect: false
 });
+import "./dropdown.js"
